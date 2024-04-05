@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="Js/script.js" type="module"></script>
+    <title>Landing borrador</title>
+</head>
+
+<body>
+            <!-- HEADER -->
+            <header class="fixed top-0 left-0 w-full bg-gray-50 bg-opacity-45 bg-clip-padding blur-backdrop-filter shadow-md z-50">
+              <div class="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    <img src="Images/LogoTRAVELKIRIA PNG.png" alt="Logo de la empresa" class="object-contain h-20 mb-4">
+                </a>
+              <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-[#0D3B66]">Inicio</a>
+                <a class="mr-5 hover:text-[#0D3B66]">Nosotros</a>
+                <a class="mr-5 hover:text-[#0D3B66]">Servicios</a>
+              </nav>
+              <button class="inline-flex items-center border-2 border-[#0D3B66] py-1 px-8 focus:outline-none hover:bg-gray-200 rounded-full text-base mt-4 md:mt-0 mr-1">Registrar hotel</button>
+              <button class="inline-flex items-center border-2 border-[#0D3B66] py-1 px-8 focus:outline-none hover:bg-gray-200 rounded-full text-base mt-4 md:mt-0 mr-1">Registrate</button>
+              <button class="inline-flex items-center bg-[#0D3B66] border-0 py-1 px-8 focus:outline-none hover:bg-[#1D588F] rounded-full text-white mt-4 md:mt-0">Inicia sesión</button>
+              </div>
+            </header>
+      
+
+
+<!-- CARRUSEL -->
+<div class="max-w-full mx-auto">
+
+	<div id="default-carousel" class="relative" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="overflow-hidden relative h-[500px]">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
+                <img src="Images/imagen1.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                <div class="absolute top-60 w-full text-center font-extrabold  text-white text-3xl font-bold">
+                  <h4 style="text-shadow: 2px 8px 8px rgba(0,0,0,0.5);">"Tu hogar lejos de casa, reserva en un clic”.</h4>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="Images/imagen 2.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                <div class="absolute top-60 w-full text-center font-extrabold  text-white text-3xl font-bold">
+                  <h4 style="text-shadow: 2px 8px 8px rgba(0,0,0,0.5);">"Tu hogar lejos de casa, reserva en un clic”.</h4>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="Images/imagen3.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                <div class="absolute top-60 w-full text-center font-extrabold  text-white text-3xl font-bold">
+                  <h4 style="text-shadow: 2px 8px 8px rgba(0,0,0,0.5);">"Tu hogar lejos de casa, reserva en un clic”.</h4>
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="Images/imagen4.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                <div class="absolute top-60 w-full text-center font-extrabold  text-white text-3xl font-bold">
+                  <h4 style="text-shadow: 2px 8px 8px rgba(0,0,0,0.5);">"Tu hogar lejos de casa, reserva en un clic”.</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                <span class="hidden">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span class="hidden">Next</span>
+            </span>
+        </button>
+    </div>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+</div>
+      
+
+        <!-- SECCIÓN DE INFO INCIO -->
+
+        <section class="text-gray-600 h-[560px] border border-2 border-black bg-[#FAF0CA]">
+
+
+          <!-- ACA IRÁ LA BARRA DE CALENDARIO -->
+          <div class="container bg-[#0D3B66] mx-auto justify-center items-center">
+              <input type="date" class="border-2 border-black drop-shadow-lg w-50 p-2 mt-4 mx-2 mb-4">
+              <input type="date" class="border-2 border-black drop-shadow-lg w-50 p-2 mt-4 mx-2 mb-4">
+              <select name="Departamentos" id="opciones" class="border-2 border-black drop-shadow-lg w-80 p-2 mt-4 mx-2 mb-4">
+                <option value="san_salvador" selected>Departamentos</option>
+                <option value="la_libertad">San Salvador</option>
+                <option value="santa_Ana">La libertad</option>
+                <option value="chalatenango">Santa Ana</option>
+                <option value="chalatenango">Chalatenango</option>
+              </select>
+              <select name="Departamentos" id="opciones" class="border-2 border-black drop-shadow-lg w-80 p-2 mt-4 mx-2 mb-4">
+                <option value="san_salvador" selected>Tipo de habitación</option>
+                <option value="la_libertad">La libertad</option>
+                <option value="santa_Ana">Santa Ana</option>
+                <option value="chalatenango">Chalatenango</option>
+              </select>
+              <button class=" border-black drop-shadow-lg p-2 mt-4 mx-2 mb-4 bg-[#5E8C61] text-white">Consultar disponibilidad</button>           
+          </div>
+
+
+
+          <div class="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center grid grid-cols-2 gap-4 relative">
+            <div class="lg:flex-grow md:w-1/2 flex flex-col md:items-start md:text-left mb-2 md:mb-0 items-center text-center bg-gray-200 border border-2 border-gray-300 drop-shadow-lg">
+              <div class="bg-[#F2F0EF] w-[350px] p-4">
+                <h1 class="text-[#0D3B66] font-bold text-md">Reservar por:</h1>
+                <br/>
+                <label for="Departamentos">Departamentos</label>
+                <select name="Departamentos" id="opciones" class="rounded-full border border-3 border-[#0D3B66] p-2 w-80">
+                  <option value="san_salvador" selected>San Salvador</option>
+                  <option value="la_libertad">La libertad</option>
+                  <option value="santa_Ana">Santa Ana</option>
+                  <option value="chalatenango">Chalatenango</option>
+                </select>
+                <label for="Tipo de habitación">Tipo de habitación</label>
+                <select name="Departamentos" id="opciones" class="rounded-full border border-3 border-[#0D3B66] p-2 w-80">
+                  <option value="san_salvador" selected>Suite</option>
+                  <option value="la_libertad">Individual</option>
+                  <option value="santa_Ana">Doble</option>
+                  <option value="chalatenango">Familiar</option>
+                  <option value="chalatenango">King</option>
+                  <option value="chalatenango">Queen</option>
+                </select>
+                <label for="Precio">Precio</label>
+                <select name="Departamentos" id="opciones" class="rounded-full border border-3 border-[#0D3B66] p-2 w-80">
+                  <option value="san_salvador" selected>$60-$90</option>
+                  <option value="la_libertad">$100-$250</option>
+                  <option value="santa_Ana">$300-$450</option>
+                  <option value="chalatenango">$500-$650</option>
+                </select>
+                <label for="Calificación">Calificación</label>
+                <select name="Departamentos" id="opciones" class="rounded-full border border-3 border-[#0D3B66] p-2 w-80">
+                  <option value="san_salvador" selected>Buena</option>
+                  <option value="la_libertad">Muy buena</option>
+                  <option value="santa_Ana">Excelente</option>
+                </select>
+                <label for="Servicios">Servicios</label>
+                <select name="Departamentos" id="opciones" class="rounded-full border border-3 border-[#0D3B66] p-2 w-80">
+                  <option value="san_salvador" selected>Gym</option>
+                  <option value="la_libertad">Restaurante</option>
+                  <option value="santa_Ana">Buffet</option>
+                  <option value="santa_Ana">Piscina</option>
+                  <option value="santa_Ana">Servicio a la habitación/Limpieza</option>
+                </select>
+              </div>
+              </div>
+              <div>
+                  <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-full shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 p-10 mx-[] ">
+                    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="Images/hotel1.jpg" alt="">
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Hotel "Las tunas"</h5>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    </div>
+                  </a>
+
+              </div>
+          </div>
+        </section>
+
+        
+      
+                <!-- NOSOTROS -->
+      
+                <section class="relative">
+                  <div class="absolute inset-0">
+                      <img src="Images/DegradadoEditao.jpg" alt="#" class="object-cover w-full">
+                  </div>
+                  <div>
+                    <div class="relative mx-full max-w-full py-[450px] sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8 absolute inset-0" style="background-image: linear-gradient(to right, rgba(87, 151, 83, 0.95), rgba(255, 255, 255, 0.05));"">
+                      <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+                          <div class="container border-2 border-[#F4D353] drop-shadow-lg p-4 rounded-lg bg-[#F4D353]">
+                              <h1 class="text-3xl font-bold sm:text-5xl text-[#0D3B66] text-center italic">
+                                  Sobre Nosotros
+                              </h1>
+                          </div>
+                          <p class="mt-4 max-w-lg sm:text-xl sm:leading-7 text-white text-left">
+                              Somos una plataforma líder en la reservación de habitaciones, que ofrece una experiencia 
+                              incomparable de alojamiento en todo el país. Nos enorgullece conectar a nuestros clientes 
+                              con una amplia gama de hoteles y alojamientos en donde pueden encontrar su destino perfecto 
+                              que se adapte a sus necesidades y preferencias.
+                          </p>
+                      </div>
+                  </div>
+                  
+          
+              </section>
+
+              <!-- SERVICIOS -->
+            
+              <section class="text-gray-600 body-font h-[450px]">
+                <div class="w-full bg-[#0D3B66] gradient p-10 text-center font-bold text-white">SERVICIOS</div>
+                <div class="container-fluid mx-auto flex flex-wrap h-[20%] mb-10">
+                  <div class="lg:w-full mx-auto">
+                    <div class="flex flex-wrap w-full py-32 px-10 relative mb-4">
+                      <img alt="gallery" class="w-full object-cover h-[650px] object-center  absolute inset-0" src="Images/servicios.jpg">
+                     <div class="flex justify-center w-full">
+                      <div class="grid grid-cols-3 gap-3 relative">
+                        <div class="bg-black rounded-3xl bg-opacity-45 h-[480px] border border-2 border-[#FAF0CA]">
+                          <h2 class="text-2xl text-gray-900 font-medium title-font mb-2 text-white text-center mt-4 ">Reservación</h2>
+                          <img src="Images/Reserva.png" alt="#" class="mx-[140px]">
+                        <p class="leading-relaxed text-white italic p-8">El servicio de alojamiento proporciona un espacio temporal para que los huéspedes se hospeden durante su viaje o estadía. Esto implica ofrecer habitaciones para que los visitantes descansen y se sientan cómodos, así como servicios adicionales como limpieza, suministro de ropa de cama y baño, acceso a comodidades como televisión, wifi, estacionamiento, entre otros.</p>
+                        </div>
+                      </div>
+                     </div>
+                      
+                     
+                    </div>
+                  </div>
+                </div>
+              </section>
+</body>
+
+<footer class="text-gray-600 body-font bg-[#0D3B66] mt-[250px]">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left xl">
+     <img src="Images/Logo vertical negativo.png" alt="logo">
+    </div>
+    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CONTACTÁNOS</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-[#628FBA] hover:text-gray-800">(+503) 2255-6578</a>
+          </li>
+          <li>
+            <a class="text-[#628FBA] hover:text-gray-800">
+              travelkiriaes@outlook.com</a>
+          </li>
+          <li>
+            <a class="text-[#628FBA] hover:text-gray-800">Col. San benito, San Salvador, El Salvador</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">EXPLORAR</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-[#628FBA] hover:text-gray-800">Inicio</a>
+          </li>
+          <li>
+            <a class="text-[#628FBA] hover:text-gray-800">Nosotros</a>
+          </li>
+          <li>
+            <a class="text-[#628FBA] hover:text-gray-800">Servicios</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">POLÍTICAS</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-[#628FBA] hover:text-gray-800">Terminos y condiciones</a>
+          </li>
+        </nav>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-[#0A3054]">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 Travelkiria —
+        <a href="#" class="text-gray-600 ml-1">Todos los derechos reservados</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+</html>
